@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #d89797,#e0d5a5);
+    padding: 30px 10px;
+}
+
+.app {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.control i {
+    margin-left: 5px;
+}
+
+button {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+    color: black;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgb(247, 89, 89);
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background: rgb(33, 202, 245);
+    transition: 0.2s;
+    color: #fff;
+}
+
+button:active {
+    background: #f74222;
+    transition: 0.1s;
+}
+
+.b1 {
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.control {
+    background: #414a64;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    button {
+        font-size: 12px;
+        width: 120px;
+    }
+    .control {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 739px) {
+    .control {
+        flex-wrap: wrap;
+    }
+}
